@@ -1,5 +1,8 @@
 package io.github.welton.domain.entity;
 
+import javax.persistence.Entity;
+
+
 public class ItemPedido {
 
     private Integer id;

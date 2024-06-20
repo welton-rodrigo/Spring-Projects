@@ -1,8 +1,18 @@
 package io.github.welton.domain.entity;
 
+import javax.persistence.*;
+
+//pacote java.persistence
+@Entity
+@Table
 public class Cliente {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", length = 100)
     private Integer Id;
+
+    @Column(name= "nome")
     private String nome;
 
     public Cliente() {

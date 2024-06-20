@@ -19,33 +19,30 @@ public class VendasApplication {
     public CommandLineRunner init(@Autowired Clientes clientes){
         return args -> {
             System.out.println("Salvando Clientes");
-           clientes.salvar(new Cliente("Raquel"));
-           clientes.salvar(new Cliente("Welton"));
-            clientes.salvar(new Cliente("gabriel"));
+            clientes.save(new Cliente("Raquel"));
+            clientes.save(new Cliente("Welton"));
+            clientes.save(new Cliente("gabriel"));
 
-           List<Cliente> todosClientes =  clientes.obterTodos();
+           List<Cliente> todosClientes =  clientes.findAll();
            todosClientes.forEach(System.out::println);
 
-            System.out.println("Buscando Clientes por nome");
-           clientes.buscarPorNome("Welt").forEach(System.out::println);
+           System.out.println("Buscando Clientes por nome");
+           clientes.findByNomeLike("Welton").forEach(System.out::println);
 
-            System.out.println("buscando cliente por nome. Cliente encontrado : ");
-            clientes.buscarPorNome("Welt").forEach(System.out::println);
-
-            System.out.println("Deletando todos por nome");
-            clientes.buscarPorNome("Wel").forEach(c -> {
-                clientes.deletar(c);
-            });
+         System.out.println("Deletando todos por nome");
+           clientes.findByNomeLike("A%Welton%X").forEach(c -> {
+                clientes.delete(c);
+           });
 
             System.out.println("Atualizando clientes");
             todosClientes.forEach(c ->{
               c.setNome(c.getNome() + "atualizado.");
-              clientes.atualizar(c);
+             clientes.save(c);
           });
 
-            todosClientes = clientes.obterTodos();
+            todosClientes = clientes.findAll();
 
-            if(todosClientes.isEmpty()){
+           if(todosClientes.isEmpty()){
                 System.out.println("Nenhum Cliente encontrado!");
             }else {
                 System.out.println("Clientes encontrados!");
