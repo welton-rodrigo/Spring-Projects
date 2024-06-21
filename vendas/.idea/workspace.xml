@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/welton/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/welton/VendasApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/welton/domain/repositorio/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/welton/domain/repositorio/Clientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/github/welton/VendasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/welton/VendasApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/github/welton/domain/repositorio/Clientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/welton/domain/repositorio/Clientes.class" afterDir="false" />
     </list>
@@ -46,6 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
@@ -95,25 +95,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1718306277641" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1718978352565">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1719000781209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1718978352565" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1719000781209" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1718211051740" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1718978352564">
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1719000781209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1718978352564" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1719000781209" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1718211051740" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1718978352564">
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1719000781209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1718978352564" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1719000781209" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1718211051739" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1718978352564">
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1719000781209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1718978352564" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1366.728@0.0.1920.1040" timestamp="1719000781209" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1718211051740" />
     <state x="775" y="454" key="ReplaceDuplicatesPrompt" timestamp="1718735190438">
       <screen x="0" y="0" width="1920" height="1040" />
