@@ -1,12 +1,17 @@
 package io.github.welton;
 
 import io.github.welton.domain.entity.Cliente;
-import io.github.welton.domain.repositorio.Clientes;
+import io.github.welton.domain.entity.Pedido;
+import io.github.welton.domain.repository.Clientes;
+import io.github.welton.domain.repository.Pedidos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.List;
 
 @SpringBootApplication
@@ -14,28 +19,28 @@ import java.util.List;
 public class VendasApplication {
 
     @Bean
-    public CommandLineRunner init(@Autowired Clientes clientes){
+    public CommandLineRunner init(
+            @Autowired Clientes clientes,
+            @Autowired Pedidos pedidos
+    ){
         return args -> {
             System.out.println("Salvando Clientes");
-            clientes.save(new Cliente("Raquel"));
-            clientes.save(new Cliente("Welton"));
-            clientes.save(new Cliente("Gabriel"));
+            Cliente fulano = new Cliente("Fulano1");
+            clientes.save(fulano);
+
+            Pedido p = new Pedido();
+            p.setCliente(fulano);
+            p.setDataPedido(LocalDate.now());
+            p.setTotal(BigDecimal.valueOf(100.00));
+
+            pedidos.save(p);
+
+           Cliente cliente =  clientes.findClienteFetchPedidos(fulano.getId());
+            System.out.println(cliente);
+            System.out.println(cliente.getPedidos());
 
 
-            boolean existe = clientes.existsByNome("Welton");
-            System.out.println("Existe um Cliente com nome Welton?" + existe);
 
-            System.out.println("Pesquisando por Welton no Banco?");
-            List<Cliente> lista =  clientes.encontrarPorNome("Welton");
-            lista.forEach(System.out::println);
-
-           System.out.println("deletando por nome");
-           clientes.deleteByNome("Welton");
-
-            System.out.println("listar todos");
-            clientes.findAll();
-            List<Cliente> lista2 = clientes.findAll();
-            lista2.forEach(System.out::println);
         };
     }
 
