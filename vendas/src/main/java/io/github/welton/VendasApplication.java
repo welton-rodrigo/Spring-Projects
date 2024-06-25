@@ -35,10 +35,19 @@ public class VendasApplication {
 
             pedidos.save(p);
 
-           Cliente cliente =  clientes.findClienteFetchPedidos(fulano.getId());
-            System.out.println(cliente);
-            System.out.println(cliente.getPedidos());
+            Pedido p2 = new Pedido();
+            p2.setCliente(fulano);
+            p2.setDataPedido(LocalDate.now());
+            p2.setTotal(BigDecimal.valueOf(200.00));
 
+            pedidos.save(p2);
+
+          //  Cliente cliente =  clientes.findClienteFetchPedidos(fulano.getId());
+         //   System.out.println(cliente);
+         //   System.out.println(cliente.getPedidos());
+
+
+           pedidos.findByCliente(fulano).forEach(System.out::println);
 
 
         };
