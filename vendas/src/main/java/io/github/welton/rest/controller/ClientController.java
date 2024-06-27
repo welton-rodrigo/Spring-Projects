@@ -36,6 +36,11 @@ public class ClientController {
        return ResponseEntity.ok(clienteSalvo);
     }
 
+    @DeleteMapping
+    public ResponseEntity delete(@PathVariable Integer id){
+
+    }
+
 
 }
 
