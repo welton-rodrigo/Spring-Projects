@@ -29,6 +29,7 @@ public class ClientController {
         return ResponseEntity.notFound().build();
     }
 
+
     @PostMapping
     @ResponseBody
     public ResponseEntity save(@RequestBody Cliente cliente){
@@ -48,6 +49,19 @@ public class ClientController {
             return ResponseEntity.noContent().build();
     }
 
+    @PutMapping("/{id}")
+    @ResponseBody
+    public ResponseEntity update(@PathVariable Integer id, @RequestBody Cliente cliente){
+
+            return clientes
+                    .findById(id)
+                    .map( clienteExistente -> {
+                        cliente.setId(clienteExistente.getId());
+                        clientes.save(cliente);
+                        return ResponseEntity.noContent().build();
+                    }).orElseGet( () -> ResponseEntity.notFound().build() );
+    }
+
 
 }
 
@@ -57,4 +71,6 @@ ANOTAÇÕES.
 @ResponseBody -> Retorna uma resposta no corpo da requisição no formato JSON, se não for colocado dara erro, a menos que o retorno seje = string
 Optional -> pode ou nao existir por isso retorna um optional
 @RequestBody os dados que vem da requisição
+@putMapping - > para atualizar integralmente
+
 * */
