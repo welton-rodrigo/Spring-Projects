@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aed63dc0-9402-4698-bce2-9dab52f70b98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/welton/domain/repository/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/welton/domain/repository/Pedidos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/welton/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/welton/rest/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/welton/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/welton/service/PedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/welton/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/welton/service/impl/PedidoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
